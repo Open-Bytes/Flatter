@@ -1,0 +1,179 @@
+part of '../../../flatter.dart';
+
+extension CopyText<T extends Text> on T {
+  Text copyWith({
+    String? data,
+    TextStyle? style,
+    StrutStyle? strutStyle,
+    TextAlign? textAlign,
+    TextDirection? textDirection,
+    Locale? locale,
+    bool? softWrap,
+    TextOverflow? overflow,
+    double? textScaleFactor,
+    int? maxLines,
+    String? semanticsLabel,
+    TextWidthBasis? textWidthBasis,
+  }) =>
+      Text(
+        data ?? this.data ?? '',
+        style: style ?? this.style,
+        strutStyle: strutStyle ?? this.strutStyle,
+        textAlign: textAlign ?? this.textAlign,
+        locale: locale ?? this.locale,
+        maxLines: maxLines ?? this.maxLines,
+        overflow: overflow ?? this.overflow,
+        semanticsLabel: semanticsLabel ?? this.semanticsLabel,
+        softWrap: softWrap ?? this.softWrap,
+        textDirection: textDirection ?? this.textDirection,
+        textScaleFactor: textScaleFactor ?? this.textScaleFactor,
+        textWidthBasis: textWidthBasis ?? this.textWidthBasis,
+      );
+}
+
+extension TextStyleExt<T extends Text> on T {
+  T textStyle(TextStyle? style) {
+    final TextStyle currentStyle = this.style ?? const TextStyle();
+    final TextStyle newStyle = currentStyle.copyWith(
+      background: style?.background,
+      backgroundColor: style?.backgroundColor,
+      color: style?.color,
+      debugLabel: style?.debugLabel,
+      decoration: style?.decoration,
+      decorationColor: style?.decorationColor,
+      decorationStyle: style?.decorationStyle,
+      decorationThickness: style?.decorationThickness,
+      fontFamily: style?.fontFamily,
+      fontFamilyFallback: style?.fontFamilyFallback,
+      fontFeatures: style?.fontFeatures,
+      fontSize: style?.fontSize,
+      fontStyle: style?.fontStyle,
+      fontWeight: style?.fontWeight,
+      foreground: style?.foreground,
+      height: style?.height,
+      inherit: style?.inherit,
+      letterSpacing: style?.letterSpacing,
+      locale: style?.locale,
+      shadows: style?.shadows,
+      textBaseline: style?.textBaseline,
+      wordSpacing: style?.wordSpacing,
+    );
+    return copyWith(style: newStyle) as T;
+  }
+}
+
+extension TextScaleExt<T extends Text> on T {
+  T textScale(double scaleFactor) =>
+      copyWith(textScaleFactor: scaleFactor) as T;
+}
+
+extension BoldTextExt<T extends Text> on T {
+  T bold() => copyWith(
+        style: (style ?? const TextStyle()).copyWith(
+          fontWeight: FontWeight.bold,
+        ),
+      ) as T;
+}
+
+extension ItalicTextExt<T extends Text> on T {
+  T italic() => copyWith(
+        style: (style ?? const TextStyle()).copyWith(
+          fontStyle: FontStyle.italic,
+        ),
+      ) as T;
+}
+
+extension TextFontWeightExt<T extends Text> on T {
+  T fontWeight(FontWeight fontWeight) => copyWith(
+        style: (style ?? const TextStyle()).copyWith(
+          fontWeight: fontWeight,
+        ),
+      ) as T;
+}
+
+extension TextFontSizeExt<T extends Text> on T {
+  T fontSize(double size) => copyWith(
+        style: (style ?? const TextStyle()).copyWith(
+          fontSize: size,
+        ),
+      ) as T;
+}
+
+extension TextFontFamilyExt<T extends Text> on T {
+  T fontFamily(String font) => copyWith(
+        style: (style ?? const TextStyle()).copyWith(
+          fontFamily: font,
+        ),
+      ) as T;
+}
+
+extension LetterSpacingExt<T extends Text> on T {
+  T letterSpacing(double space) => copyWith(
+        style: (style ?? const TextStyle()).copyWith(
+          letterSpacing: space,
+        ),
+      ) as T;
+}
+
+extension TextWordSpacingExt<T extends Text> on T {
+  T wordSpacing(double space) => copyWith(
+        style: (style ?? const TextStyle()).copyWith(
+          wordSpacing: space,
+        ),
+      ) as T;
+}
+
+extension TextShadowExt<T extends Text> on T {
+  T textShadow({
+    Color color = const Color(0x34000000),
+    double blurRadius = 0.0,
+    Offset offset = Offset.zero,
+  }) =>
+      copyWith(
+        style: (style ?? const TextStyle()).copyWith(
+          shadows: [
+            Shadow(
+              color: color,
+              blurRadius: blurRadius,
+              offset: offset,
+            ),
+          ],
+        ),
+      ) as T;
+}
+
+extension TextColorExt<T extends Text> on T {
+  T textColor(Color color) => copyWith(
+        style: (style ?? const TextStyle()).copyWith(
+          color: color,
+        ),
+      ) as T;
+}
+
+extension TextAlignmentExt<T extends Text> on T {
+  T textAlignment(TextAlign align) => copyWith(textAlign: align) as T;
+}
+
+extension TextDirectionExt<T extends Text> on T {
+  T textDirection(TextDirection direction) =>
+      copyWith(textDirection: direction) as T;
+}
+
+extension TextBaselineExt<T extends Text> on T {
+  T textBaseline(TextBaseline textBaseline) => copyWith(
+        style: (style ?? const TextStyle()).copyWith(
+          textBaseline: textBaseline,
+        ),
+      ) as T;
+}
+
+extension TextWidthBasisExt<T extends Text> on T {
+  T textWidthBasis(TextWidthBasis textWidthBasis) =>
+      copyWith(textWidthBasis: textWidthBasis) as T;
+}
+
+extension UnderlineTextExt<T extends Text> on T {
+  T withUnderLine() => copyWith(
+      style: (style ?? const TextStyle())
+          .copyWith(decoration: TextDecoration.underline)) as T;
+}
