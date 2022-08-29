@@ -1,4 +1,4 @@
-part of '../../../flatter.dart';
+part of '../../../../flatter.dart';
 
 extension CardExt on Widget {
   Card card(
