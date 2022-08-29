@@ -11,8 +11,6 @@ We make Flutter **flat**, so it's Flatter 👋
     - [Modifiers](#modifiers)
     - [Widget Extensions](#widget-extensions)
     - [Text Extensions](#text-extensions)
-- [Usage](#usage)
-- [Installation](#tada-installation)
 - [Contribution](#contribution)
 - [Changelog](#changelog)
 - [License](#license)
@@ -163,17 +161,17 @@ modifiers to create a new modifier that you can use to add background:
 
 ```dart
 class BackgroundModifier implements WidgetModifier<Widget, DecoratedBox> {
-  BackgroundModifier(this.color);
+BackgroundModifier(this.color);
 
-  Color color;
+Color color;
 
-  @override
-  DecoratedBox body(Widget content) {
-    return DecoratedBox(
-      decoration: BoxDecoration(color: color),
-      child: content,
-    );
-  }
+    @override
+    DecoratedBox body(Widget content) {
+        return DecoratedBox(
+            decoration: BoxDecoration(color: color),
+            child: content,
+        );
+    }
 }
 ```
 
