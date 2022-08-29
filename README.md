@@ -2,6 +2,10 @@
 
 We make Flutter **flat**, so it's Flatter 👋
 
+<p align="center"><a href=""><img src="https://github.com/Open-Bytes/Flatter/blob/master/etc/images/logo.jpeg?raw=true" alt="Gray shape shifter" width="350" height="300"/></a></p>
+
+
+
 # Table of contents
 
 - [What's Flatter?](#whats-flatter)
