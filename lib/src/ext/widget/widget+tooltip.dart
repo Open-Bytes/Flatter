@@ -1,7 +1,7 @@
 part of '../../../flatter.dart';
 
 extension WidgetsExtension on Widget {
-  Widget withTooltip(
+  Widget tooltip(
           {Key? key,
           String? message,
           InlineSpan? richMessage,

@@ -32,34 +32,6 @@ extension CopyText<T extends Text> on T {
 }
 
 extension TextStyleExt<T extends Text> on T {
-  T withTextStyle(TextStyle? style) {
-    final TextStyle currentStyle = this.style ?? const TextStyle();
-    final TextStyle newStyle = currentStyle.copyWith(
-      background: style?.background,
-      backgroundColor: style?.backgroundColor,
-      color: style?.color,
-      debugLabel: style?.debugLabel,
-      decoration: style?.decoration,
-      decorationColor: style?.decorationColor,
-      decorationStyle: style?.decorationStyle,
-      decorationThickness: style?.decorationThickness,
-      fontFamily: style?.fontFamily,
-      fontFamilyFallback: style?.fontFamilyFallback,
-      fontFeatures: style?.fontFeatures,
-      fontSize: style?.fontSize,
-      fontStyle: style?.fontStyle,
-      fontWeight: style?.fontWeight,
-      foreground: style?.foreground,
-      height: style?.height,
-      inherit: style?.inherit,
-      letterSpacing: style?.letterSpacing,
-      locale: style?.locale,
-      shadows: style?.shadows,
-      textBaseline: style?.textBaseline,
-      wordSpacing: style?.wordSpacing,
-    );
-    return copyWith(style: newStyle) as T;
-  }
 
   T textStyle({
     bool inherit = true,
@@ -118,6 +90,36 @@ extension TextStyleExt<T extends Text> on T {
         overflow: overflow);
     return withTextStyle(style);
   }
+
+  T withTextStyle(TextStyle? style) {
+    final TextStyle currentStyle = this.style ?? const TextStyle();
+    final TextStyle newStyle = currentStyle.copyWith(
+      background: style?.background,
+      backgroundColor: style?.backgroundColor,
+      color: style?.color,
+      debugLabel: style?.debugLabel,
+      decoration: style?.decoration,
+      decorationColor: style?.decorationColor,
+      decorationStyle: style?.decorationStyle,
+      decorationThickness: style?.decorationThickness,
+      fontFamily: style?.fontFamily,
+      fontFamilyFallback: style?.fontFamilyFallback,
+      fontFeatures: style?.fontFeatures,
+      fontSize: style?.fontSize,
+      fontStyle: style?.fontStyle,
+      fontWeight: style?.fontWeight,
+      foreground: style?.foreground,
+      height: style?.height,
+      inherit: style?.inherit,
+      letterSpacing: style?.letterSpacing,
+      locale: style?.locale,
+      shadows: style?.shadows,
+      textBaseline: style?.textBaseline,
+      wordSpacing: style?.wordSpacing,
+    );
+    return copyWith(style: newStyle) as T;
+  }
+
 }
 
 extension TextScaleExt<T extends Text> on T {
