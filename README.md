@@ -2,6 +2,23 @@
 
 We make Flutter **flat**, so it's Flatter 👋
 
+# Table of contents
+
+- [What's Flatter?](#whats-flatter)
+- [Widget Modifier](#widget-modifier)
+- [Components](#components)
+    - [Layouts](#layouts)
+    - [Modifiers](#modifiers)
+    - [Widget Extensions](#widget-extensions)
+    - [Text Extensions](#text-extensions)
+- [Usage](#usage)
+- [Installation](#tada-installation)
+- [Contribution](#contribution)
+- [Changelog](#changelog)
+- [License](#license)
+
+# What's Flatter?
+
 **Flatter** is an extra-light and powerful solution for the hell of nested widgets in **Flutter**.
 **Flatter** makes Flutter widgets flat, concise, readable, and maintainable.
 **Flatter** hides the verbosity of Flutter widgets by exposing declarative APIs for different components.
@@ -137,20 +154,6 @@ FlatColumn(
         .paddingSymmetric(vertical: 10, horizontal: 10);
 ```
 
-# Table of contents
-
-- [Widget Modifier](#widget-modifier)
-- [Components](#components)
-    - [Layouts](#layouts)
-    - [Modifiers](#modifiers)
-    - [Widget Extensions](#widget-extensions)
-    - [Text Extensions](#text-extensions)
-- [Usage](#usage)
-- [Installation](#tada-installation)
-- [Contribution](#contribution)
-- [Changelog](#changelog)
-- [License](#license)
-
 ## Widget Modifier
 
 `WidgetModifier` is the heart of **Flatter**. A modifier that you apply to a view or another widget modifier,
@@ -160,17 +163,17 @@ modifiers to create a new modifier that you can use to add background:
 
 ```dart
 class BackgroundModifier implements WidgetModifier<Widget, DecoratedBox> {
-BackgroundModifier(this.color);
+  BackgroundModifier(this.color);
 
-Color color;
+  Color color;
 
-    @override
-    DecoratedBox body(Widget content) {
-        return DecoratedBox(
-            decoration: BoxDecoration(color: color),
-            child: content,
-        );
-    }
+  @override
+  DecoratedBox body(Widget content) {
+    return DecoratedBox(
+      decoration: BoxDecoration(color: color),
+      child: content,
+    );
+  }
 }
 ```
 
@@ -180,9 +183,9 @@ itself that incorporates the widget modifier:
 
 ```dart
 extension BackgroundExt on Widget {
-   DecoratedBox background(Color color) {
-     return modifier(BackgroundModifier(color));
-   }
+  DecoratedBox background(Color color) {
+    return modifier(BackgroundModifier(color));
+  }
 }
 ```
 
