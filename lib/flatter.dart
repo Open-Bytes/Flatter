@@ -5,6 +5,7 @@ import 'dart:ui' as ui show WindowPadding;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'dart:ui' as ui show ParagraphStyle, TextStyle, StrutStyle, lerpDouble, Shadow, FontFeature, FontVariation, TextHeightBehavior, TextLeadingDistribution;
 
 part 'src/ext/text/text+style.dart';
 

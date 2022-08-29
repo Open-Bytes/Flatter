@@ -32,7 +32,7 @@ extension CopyText<T extends Text> on T {
 }
 
 extension TextStyleExt<T extends Text> on T {
-  T textStyle(TextStyle? style) {
+  T withTextStyle(TextStyle? style) {
     final TextStyle currentStyle = this.style ?? const TextStyle();
     final TextStyle newStyle = currentStyle.copyWith(
       background: style?.background,
@@ -59,6 +59,64 @@ extension TextStyleExt<T extends Text> on T {
       wordSpacing: style?.wordSpacing,
     );
     return copyWith(style: newStyle) as T;
+  }
+
+  T textStyle({
+    bool inherit = true,
+    Color? color,
+    Color? backgroundColor,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+    double? letterSpacing,
+    double? wordSpacing,
+    TextBaseline? textBaseline,
+    double? height,
+    ui.TextLeadingDistribution? leadingDistribution,
+    Locale? locale,
+    Paint? foreground,
+    Paint? background,
+    List<ui.Shadow>? shadows,
+    List<ui.FontFeature>? fontFeatures,
+    List<ui.FontVariation>? fontVariations,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+    double? decorationThickness,
+    String? debugLabel,
+    String? fontFamily,
+    List<String>? fontFamilyFallback,
+    String? package,
+    TextOverflow? overflow,
+  }) {
+    final TextStyle style = TextStyle(
+        inherit: inherit,
+        color: color,
+        backgroundColor: backgroundColor,
+        fontSize: fontSize,
+        fontWeight: fontWeight,
+        fontStyle: fontStyle,
+        letterSpacing: letterSpacing,
+        wordSpacing: wordSpacing,
+        textBaseline: textBaseline,
+        height: height,
+        leadingDistribution: leadingDistribution,
+        locale: locale,
+        foreground: foreground,
+        background: background,
+        shadows: shadows,
+        fontFeatures: fontFeatures,
+        fontVariations: fontVariations,
+        decoration: decoration,
+        decorationColor: decorationColor,
+        decorationStyle: decorationStyle,
+        decorationThickness: decorationThickness,
+        debugLabel: debugLabel,
+        fontFamily: fontFamily,
+        fontFamilyFallback: fontFamilyFallback,
+        package: package,
+        overflow: overflow);
+    return withTextStyle(style);
   }
 }
 
