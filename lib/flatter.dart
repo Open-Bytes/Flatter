@@ -51,7 +51,7 @@ part 'src/layout/flat_row.dart';
 
 part 'src/layout/flat_stack.dart';
 
-part 'src/material/flat_card.dart';
+part 'src/layout/flat_card.dart';
 
 part 'src/modifier/align_modifier.dart';
 
