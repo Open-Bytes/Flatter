@@ -17,7 +17,7 @@ extension ShadowExt on Widget {
           spreadRadius: spreadRadius,
           offset: offset)
     ]);
-    return widgetModifier(
+    return modifier(
         DecoratedBoxModifier(key: key, decoration: decoration));
   }
 }

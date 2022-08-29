@@ -17,7 +17,7 @@ extension WidgetsExtension on Widget {
           Duration? showDuration,
           TooltipTriggerMode? triggerMode,
           bool? enableFeedback}) =>
-      widgetModifier(TooltipModifier(
+      modifier(TooltipModifier(
           message: message,
           decoration: decoration,
           height: height,

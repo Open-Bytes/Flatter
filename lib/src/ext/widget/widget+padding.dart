@@ -62,5 +62,5 @@ extension PaddingX on Widget {
           ));
 
   Padding paddingInsets({Key? key, required EdgeInsetsGeometry padding}) =>
-      widgetModifier(PaddingModifier(key: key, padding: padding));
+      modifier(PaddingModifier(key: key, padding: padding));
 }

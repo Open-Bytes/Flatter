@@ -14,7 +14,7 @@ extension MaterialExtension on Widget {
           bool borderOnForeground = true,
           Clip clipBehavior = Clip.none,
           Duration animationDuration = kThemeChangeDuration}) =>
-      widgetModifier(MaterialModifier(
+      modifier(MaterialModifier(
         key: key,
         type: type,
         elevation: elevation,

@@ -27,7 +27,7 @@ extension InkWellExtension on Widget {
           bool autofocus = false,
           FocusNode? focusNode,
           bool canRequestFocus = true}) =>
-      widgetModifier(InkWellModifier(
+      modifier(InkWellModifier(
           key: key,
           onTap: onTap,
           onTapDown: onTapDown,

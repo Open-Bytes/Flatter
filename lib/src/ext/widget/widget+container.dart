@@ -15,7 +15,7 @@ extension ContainerExt on Widget {
           Matrix4? transform,
           AlignmentGeometry? transformAlignment,
           Clip clipBehavior = Clip.none}) =>
-      widgetModifier(ContainerModifier(
+      modifier(ContainerModifier(
           key: key,
           alignment: alignment,
           padding: padding,

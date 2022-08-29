@@ -21,7 +21,7 @@ extension IconButtonExtension on Widget {
           String? tooltip,
           bool enableFeedback = true,
           BoxConstraints? constraints}) =>
-      widgetModifier(IconButtonModifier(
+      modifier(IconButtonModifier(
           key: key,
           iconSize: iconSize,
           visualDensity: visualDensity,

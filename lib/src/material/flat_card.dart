@@ -12,7 +12,7 @@ extension CardExt on Widget {
           Clip? clipBehavior,
           EdgeInsetsGeometry? margin,
           bool semanticContainer = true}) =>
-      widgetModifier(CardModifier(
+      modifier(CardModifier(
           key: key,
           color: color,
           shadowColor: shadowColor,

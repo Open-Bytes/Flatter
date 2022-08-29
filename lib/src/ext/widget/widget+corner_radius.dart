@@ -17,7 +17,7 @@ extension CornerRadiusExt on Widget {
           BorderRadius borderRadius = BorderRadius.zero,
           CustomClipper<RRect>? clipper,
           Clip clipBehavior = Clip.antiAlias}) =>
-      widgetModifier(ClipRectModifier(
+      modifier(ClipRectModifier(
           key: key,
           borderRadius: borderRadius,
           clipper: clipper,

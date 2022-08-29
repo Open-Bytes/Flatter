@@ -132,7 +132,7 @@ extension AlignExt on Widget {
           AlignmentGeometry alignment = Alignment.center,
           double? widthFactor,
           double? heightFactor}) =>
-      widgetModifier(AlignModifier(
+      modifier(AlignModifier(
         key: key,
         alignment: alignment,
         widthFactor: widthFactor,

@@ -36,7 +36,7 @@ abstract class WidgetModifier<Content extends Widget, Body extends Widget> {
 
 extension WidgetModifierExt on Widget {
 
-  Body widgetModifier<Body extends Widget>(WidgetModifier<Widget, Body> modifier) {
+  Body modifier<Body extends Widget>(WidgetModifier<Widget, Body> modifier) {
     return modifier.body(this);
   }
 

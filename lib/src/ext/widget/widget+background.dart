@@ -26,7 +26,7 @@ extension BackgroundExt on Widget {
         gradient: gradient,
         backgroundBlendMode: backgroundBlendMode,
         shape: shape);
-    return widgetModifier(DecoratedBoxModifier(
+    return modifier(DecoratedBoxModifier(
         key: key, decoration: decoration, position: position));
   }
 }

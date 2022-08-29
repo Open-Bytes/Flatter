@@ -7,7 +7,7 @@ extension OverlayExt on Widget {
       StackFit fit = StackFit.loose,
       Clip clipBehavior = Clip.hardEdge,
       required Widget of}) {
-    return widgetModifier(OverlayModifier(
+    return modifier(OverlayModifier(
         alignment: alignment,
         textDirection: textDirection,
         fit: fit,
