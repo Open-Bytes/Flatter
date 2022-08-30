@@ -216,7 +216,7 @@ The different components of the packages can be categorized as the following:
 * **Widget Extensions**
 * **Text Extension**
 
-### Layouts
+## Layouts
 
 Every layout implements [WidgetFunction](#widgetfunction) or [WidgetGroupFunction](#widgetgroupfunction)
 
@@ -232,7 +232,7 @@ The table below contains the available layouts
 | **FlatStack**    | Stack widget with [WidgetGroupFunction](#widgetgroupfunction).  |
 
 
-### Modifiers
+## Modifiers
 
 The table below contains the available modifiers
 
@@ -253,7 +253,7 @@ The table below contains the available modifiers
 | **PaddingModifier**         | [Modifier](#widget-modifier) for `Padding` widget         |
 | **TooltipModifier**         | [Modifier](#widget-modifier) for `Tooltip` widget         |
 
-### Widget Extensions
+## Widget Extensions
 
 The table below contains the available widget extensions
 
@@ -350,7 +350,7 @@ The table below contains the available widget extensions
 | **tooltip**                        | Applies `TooltipModifier`         |
 
 
-### Text Extensions
+## Text Extensions
 
 The table below contains the available text extensions
 
