@@ -1,10 +1,10 @@
 name: flatter
-description: We make Flutter flat, We are Flatter.
+description: We make Flutter flat, We are Flatter. Flatter is an extra-light and powerful solution for the hell of nested widgets in Flutter. Flatter makes Flutter widgets flat and readable.
 version: 0.1.0
 homepage: https://github.com/Open-Bytes/Flatter.git
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.12.0 <=3.3.0"
   flutter: ">=2.0.0"
 
 dependencies:
