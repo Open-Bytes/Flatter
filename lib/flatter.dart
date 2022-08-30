@@ -1,15 +1,17 @@
 library flatter;
 
+import 'dart:ui' as ui
+    show Shadow, FontFeature, FontVariation, TextLeadingDistribution;
 import 'dart:ui' as ui show WindowPadding;
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'dart:ui' as ui show ParagraphStyle, TextStyle, StrutStyle, lerpDouble, Shadow, FontFeature, FontVariation, TextHeightBehavior, TextLeadingDistribution;
 
 part 'src/ext/text/text+style.dart';
 
 part 'src/ext/text/text_style+predefined.dart';
+
+part 'src/ext/widget/flat_card.dart';
 
 part 'src/ext/widget/widget+align.dart';
 
@@ -50,8 +52,6 @@ part 'src/layout/flat_material.dart';
 part 'src/layout/flat_row.dart';
 
 part 'src/layout/flat_stack.dart';
-
-part 'src/ext/widget/flat_card.dart';
 
 part 'src/modifier/align_modifier.dart';
 
