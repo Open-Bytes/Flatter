@@ -1,6 +1,7 @@
 part of '../../../flatter.dart';
 
 extension CornerRadiusExt on Widget {
+  /// Wrap the widget in ClipRect widget.
   Widget cornerRadius(
           {Key? key,
           BorderRadius borderRadius = BorderRadius.zero,
@@ -12,6 +13,7 @@ extension CornerRadiusExt on Widget {
           clipper: clipper,
           clipBehavior: clipBehavior);
 
+  /// Wrap the widget in ClipRect widget.
   Widget clipRect(
           {Key? key,
           BorderRadius borderRadius = BorderRadius.zero,

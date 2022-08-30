@@ -1,6 +1,7 @@
 part of '../../../flatter.dart';
 
 extension BackgroundExt on Widget {
+  /// Wrap the widget in a DecoratedBox with changing the decoration.
   DecoratedBox background(
       {Key? key,
       Color? color,

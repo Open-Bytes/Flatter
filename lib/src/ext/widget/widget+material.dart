@@ -1,6 +1,7 @@
 part of '../../../flatter.dart';
 
 extension MaterialExtension on Widget {
+  /// Wrap the widget in Material widget.
   Material material(
           {Key? key,
           MaterialType type = MaterialType.canvas,

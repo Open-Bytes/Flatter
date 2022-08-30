@@ -1,6 +1,7 @@
 part of '../../../flatter.dart';
 
 extension IconButtonExtension on Widget {
+  /// Wrap the widget in IconButton widget.
   IconButton iconButton(
           {Key? key,
           double? iconSize,

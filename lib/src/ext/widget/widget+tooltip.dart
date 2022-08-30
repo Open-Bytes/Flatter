@@ -1,6 +1,7 @@
 part of '../../../flatter.dart';
 
 extension WidgetsExtension on Widget {
+        /// Wrap the widget in Tooltip widget.
   Widget tooltip(
           {Key? key,
           String? message,

@@ -1,6 +1,7 @@
 part of '../../../../flatter.dart';
 
 extension CardExt on Widget {
+  /// Wrap the widget in a Card widget.
   Card card(
           {Key? key,
           Color? color,

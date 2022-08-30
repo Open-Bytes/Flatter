@@ -1,7 +1,8 @@
 part of '../../../flatter.dart';
 
 extension ContainerExt on Widget {
-  Container container(
+        /// Wrap the widget in Container widget.
+        Container container(
           {Key? key,
           AlignmentGeometry? alignment,
           EdgeInsetsGeometry? padding,

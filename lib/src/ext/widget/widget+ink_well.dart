@@ -1,6 +1,7 @@
 part of '../../../flatter.dart';
 
 extension InkWellExtension on Widget {
+  /// Wrap the widget in InkWell widget.
   InkWell inkWell(
           {Key? key,
           GestureTapCallback? onTap,

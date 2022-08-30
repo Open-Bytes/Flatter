@@ -2,9 +2,7 @@ part of '../../../flatter.dart';
 
 extension ShadowExt on Widget {
 
-  /// A shadow cast by a box
-  ///
-  /// [color]
+  /// Wrap the widget in DecoratedBox widget with setting shadow.
   DecoratedBox shadow(
       {Color color = Colors.grey,
         double blurRadius = 20.0,
