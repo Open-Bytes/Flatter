@@ -1,6 +1,7 @@
 part of '../../../flatter.dart';
 
 extension CopyText<T extends Text> on T {
+  /// Copy text with changing the desired properties
   Text copyWith({
     String? data,
     TextStyle? style,
@@ -33,6 +34,7 @@ extension CopyText<T extends Text> on T {
 
 extension TextStyleExt<T extends Text> on T {
 
+  /// Set text style with the desired properties.
   T textStyle({
     bool inherit = true,
     Color? color,
@@ -91,6 +93,7 @@ extension TextStyleExt<T extends Text> on T {
     return withTextStyle(style);
   }
 
+  /// Set text style.
   T withTextStyle(TextStyle? style) {
     final TextStyle currentStyle = this.style ?? const TextStyle();
     final TextStyle newStyle = currentStyle.copyWith(
@@ -123,11 +126,13 @@ extension TextStyleExt<T extends Text> on T {
 }
 
 extension TextScaleExt<T extends Text> on T {
+  /// Set text scale.
   T textScale(double scaleFactor) =>
       copyWith(textScaleFactor: scaleFactor) as T;
 }
 
 extension BoldTextExt<T extends Text> on T {
+  /// Set the text as bold
   T bold() => copyWith(
         style: (style ?? const TextStyle()).copyWith(
           fontWeight: FontWeight.bold,
@@ -136,6 +141,7 @@ extension BoldTextExt<T extends Text> on T {
 }
 
 extension ItalicTextExt<T extends Text> on T {
+  /// Set the text as italic.
   T italic() => copyWith(
         style: (style ?? const TextStyle()).copyWith(
           fontStyle: FontStyle.italic,
@@ -144,6 +150,7 @@ extension ItalicTextExt<T extends Text> on T {
 }
 
 extension TextFontWeightExt<T extends Text> on T {
+  /// Set the font weight.
   T fontWeight(FontWeight fontWeight) => copyWith(
         style: (style ?? const TextStyle()).copyWith(
           fontWeight: fontWeight,
@@ -152,6 +159,7 @@ extension TextFontWeightExt<T extends Text> on T {
 }
 
 extension TextFontSizeExt<T extends Text> on T {
+  /// Set the font size.
   T fontSize(double size) => copyWith(
         style: (style ?? const TextStyle()).copyWith(
           fontSize: size,
@@ -160,6 +168,7 @@ extension TextFontSizeExt<T extends Text> on T {
 }
 
 extension TextFontFamilyExt<T extends Text> on T {
+  /// Set the font family.
   T fontFamily(String font) => copyWith(
         style: (style ?? const TextStyle()).copyWith(
           fontFamily: font,
@@ -168,6 +177,7 @@ extension TextFontFamilyExt<T extends Text> on T {
 }
 
 extension LetterSpacingExt<T extends Text> on T {
+  /// Set letter spacing.
   T letterSpacing(double space) => copyWith(
         style: (style ?? const TextStyle()).copyWith(
           letterSpacing: space,
@@ -176,6 +186,7 @@ extension LetterSpacingExt<T extends Text> on T {
 }
 
 extension TextWordSpacingExt<T extends Text> on T {
+  /// Set word spacing.
   T wordSpacing(double space) => copyWith(
         style: (style ?? const TextStyle()).copyWith(
           wordSpacing: space,
@@ -184,6 +195,7 @@ extension TextWordSpacingExt<T extends Text> on T {
 }
 
 extension TextShadowExt<T extends Text> on T {
+  /// Set text shadow.
   T textShadow({
     Color color = const Color(0x34000000),
     double blurRadius = 0.0,
@@ -203,6 +215,7 @@ extension TextShadowExt<T extends Text> on T {
 }
 
 extension TextColorExt<T extends Text> on T {
+  /// Set text color.
   T textColor(Color color) => copyWith(
         style: (style ?? const TextStyle()).copyWith(
           color: color,
@@ -211,15 +224,18 @@ extension TextColorExt<T extends Text> on T {
 }
 
 extension TextAlignmentExt<T extends Text> on T {
+  /// Set text alignment
   T textAlignment(TextAlign align) => copyWith(textAlign: align) as T;
 }
 
 extension TextDirectionExt<T extends Text> on T {
+  /// Set text direction.
   T textDirection(TextDirection direction) =>
       copyWith(textDirection: direction) as T;
 }
 
 extension TextBaselineExt<T extends Text> on T {
+  /// Set text baseline
   T textBaseline(TextBaseline textBaseline) => copyWith(
         style: (style ?? const TextStyle()).copyWith(
           textBaseline: textBaseline,
@@ -228,11 +244,13 @@ extension TextBaselineExt<T extends Text> on T {
 }
 
 extension TextWidthBasisExt<T extends Text> on T {
+  /// Set text width basis.
   T textWidthBasis(TextWidthBasis textWidthBasis) =>
       copyWith(textWidthBasis: textWidthBasis) as T;
 }
 
 extension UnderlineTextExt<T extends Text> on T {
+  /// Set text underline
   T withUnderLine() => copyWith(
       style: (style ?? const TextStyle())
           .copyWith(decoration: TextDecoration.underline)) as T;
