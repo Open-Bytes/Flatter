@@ -1,7 +1,12 @@
 part of '../../../flatter.dart';
 
 class FlatColumn extends Column {
-  FlatColumn(
+    /// Flat version of Column widget allowing you to provide the widgets using
+    /// a function for more convenient syntax. You provide the widgets
+    /// by concatenating widgets using plus `+` operator.
+    /// For example:
+    /// FlatColumn(of: () => Text("Hello") + Text("World")
+    FlatColumn(
       {Key? key,
       MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start,
       MainAxisSize mainAxisSize = MainAxisSize.max,

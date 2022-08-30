@@ -1,6 +1,8 @@
 part of '../../../flatter.dart';
 
 class FlatMaterial extends Material {
+    /// Flat version of Material widget allowing you to provide the widget
+    /// using a function for more convenient syntax.
   FlatMaterial(
       {Key? key,
       MaterialType type = MaterialType.canvas,

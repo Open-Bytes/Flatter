@@ -1,6 +1,11 @@
 part of '../../../flatter.dart';
 
 class FlatRow extends Row {
+  /// Flat version of Row widget allowing you to provide the widgets using
+  /// a function for more convenient syntax. You provide the widgets
+  /// by concatenating widgets using plus `+` operator.
+  /// For example:
+  /// FlatRow(of: () => Text("Hello") + Text("World")
   FlatRow(
       {Key? key,
         MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start,
