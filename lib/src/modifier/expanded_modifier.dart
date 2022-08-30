@@ -1,5 +1,6 @@
 part of '../../../flatter.dart';
 
+/// WidgetModifier for Expanded widget.
 class ExpandedModifier implements WidgetModifier<Widget, Expanded> {
   ExpandedModifier({this.key, this.flex = 1});
 

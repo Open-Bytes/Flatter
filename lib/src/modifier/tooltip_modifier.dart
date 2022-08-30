@@ -1,5 +1,6 @@
 part of '../../../flatter.dart';
 
+/// WidgetModifier for Tooltip widget.
 class TooltipModifier implements WidgetModifier<Widget, Tooltip> {
   TooltipModifier({
     this.key,

@@ -1,5 +1,6 @@
 part of '../../../flatter.dart';
 
+/// WidgetModifier for Padding widget.
 class PaddingModifier implements WidgetModifier<Widget, Padding> {
   PaddingModifier({this.key, required this.padding});
 

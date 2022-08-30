@@ -1,5 +1,6 @@
 part of '../../../flatter.dart';
 
+/// WidgetModifier for Material widget.
 class MaterialModifier implements WidgetModifier<Widget, Material> {
   MaterialModifier(
       {this.key,

@@ -1,5 +1,6 @@
 part of '../../../flatter.dart';
 
+/// WidgetModifier for Center widget.
 class CenterModifier implements WidgetModifier<Widget, Center> {
   CenterModifier({this.key, this.widthFactor, this.heightFactor});
 

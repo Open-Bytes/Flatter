@@ -1,5 +1,6 @@
 part of '../../../flatter.dart';
 
+/// WidgetModifier for IconButton widget.
 class IconButtonModifier implements WidgetModifier<Widget, IconButton> {
   IconButtonModifier(
       {this.key,

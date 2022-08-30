@@ -1,5 +1,6 @@
 part of '../../../flatter.dart';
 
+/// WidgetModifier for DecoratedBox widget.
 class DecoratedBoxModifier implements WidgetModifier<Widget, DecoratedBox> {
   DecoratedBoxModifier({
     this.key,

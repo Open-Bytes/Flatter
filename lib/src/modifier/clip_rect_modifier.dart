@@ -1,5 +1,6 @@
 part of '../../../flatter.dart';
 
+/// WidgetModifier for ClipRect widget.
 class ClipRectModifier implements WidgetModifier<Widget, ClipRRect> {
   ClipRectModifier(
       {this.key,

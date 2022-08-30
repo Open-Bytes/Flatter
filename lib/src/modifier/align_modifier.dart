@@ -1,5 +1,6 @@
 part of '../../../flatter.dart';
 
+/// WidgetModifier for Align widget.
 class AlignModifier implements WidgetModifier<Widget, Align> {
   AlignModifier(
       {this.key,

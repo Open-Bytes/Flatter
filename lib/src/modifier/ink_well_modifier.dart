@@ -1,5 +1,6 @@
 part of '../../../flatter.dart';
 
+/// WidgetModifier for InkWell widget.
 class InkWellModifier implements WidgetModifier<Widget, InkWell> {
   InkWellModifier({
     this.key,

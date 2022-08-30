@@ -1,5 +1,6 @@
 part of '../../../flatter.dart';
 
+/// WidgetModifier for GestureDetector widget.
 class GestureDetectorModifier
     implements WidgetModifier<Widget, GestureDetector> {
   GestureDetectorModifier({

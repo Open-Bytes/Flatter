@@ -1,7 +1,8 @@
 part of '../../../flatter.dart';
 
-class OverlayModifier implements WidgetModifier<Widget, Stack> {
-  OverlayModifier(
+/// WidgetModifier for Stack widget.
+class StackModifier implements WidgetModifier<Widget, Stack> {
+  StackModifier(
       {this.alignment = AlignmentDirectional.topStart,
         this.textDirection,
         this.fit = StackFit.loose,

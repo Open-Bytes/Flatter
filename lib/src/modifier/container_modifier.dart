@@ -1,5 +1,6 @@
 part of '../../../flatter.dart';
 
+/// WidgetModifier for Container widget.
 class ContainerModifier implements WidgetModifier<Widget, Container> {
   ContainerModifier({
     this.key,
