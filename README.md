@@ -17,7 +17,7 @@ The logo is contributed with ❤️ by [Mahmoud Hussein](https://github.com/Mhmo
     - [Modifiers](#modifiers)
     - [Widget Extensions](#widget-extensions)
     - [Text Extensions](#text-extensions)
-- [Contribution](#contribution)
+- [Contribution](#clap-contribution)
 - [Changelog](#changelog)
 - [License](#license)
 
