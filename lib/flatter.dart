@@ -1,8 +1,7 @@
 library flatter;
 
-import 'dart:ui' as ui
-    show Shadow, FontFeature, FontVariation, TextLeadingDistribution;
 import 'dart:ui' as ui show WindowPadding;
+import 'dart:ui';
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
