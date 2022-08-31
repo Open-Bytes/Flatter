@@ -1,3 +1,7 @@
+## 0.4.0
+
+* Static analysis improvements.
+
 ## 0.3.0
 
 * Documentation improvements.
