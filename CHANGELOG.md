@@ -6,7 +6,6 @@
 
 * Documentation improvements.
 
-
 ## 0.2.0
 
 * APIs & Documentation improvements.
