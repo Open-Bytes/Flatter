@@ -6,21 +6,23 @@ import 'dart:ui';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
-part 'src/ext/text/text_x_style.dart';
-
 part 'src/ext/text/text_style_x_predefined.dart';
 
-part 'src/ext/widget/widget_x_card.dart';
+part 'src/ext/text/text_x_style.dart';
 
 part 'src/ext/widget/widget_x_align.dart';
 
 part 'src/ext/widget/widget_x_background.dart';
+
+part 'src/ext/widget/widget_x_card.dart';
 
 part 'src/ext/widget/widget_x_center.dart';
 
 part 'src/ext/widget/widget_x_container.dart';
 
 part 'src/ext/widget/widget_x_corner_radius.dart';
+
+part 'src/ext/widget/widget_x_decorated_box.dart';
 
 part 'src/ext/widget/widget_x_expanded.dart';
 

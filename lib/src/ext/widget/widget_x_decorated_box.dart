@@ -1,9 +1,8 @@
 part of '../../../flatter.dart';
 
-extension BackgroundExt on Widget {
-  /// Wrap the widget in a DecoratedBox with changing the decoration.y
-  /// It's just an alias to decoratedBox API.
-  DecoratedBox background(
+extension DecoratedBoxExt on Widget {
+  /// Wrap the widget in a DecoratedBox with changing the decoration.
+  DecoratedBox decoratedBox(
       {Key? key,
       Color? color,
       DecorationImage? image,
@@ -14,8 +13,7 @@ extension BackgroundExt on Widget {
       BlendMode? backgroundBlendMode,
       BoxShape shape = BoxShape.rectangle,
       DecorationPosition position = DecorationPosition.background}) {
-    return decoratedBox(
-        key: key,
+    final BoxDecoration decoration = BoxDecoration(
         color: color,
         image: image,
         border: border,
@@ -23,7 +21,8 @@ extension BackgroundExt on Widget {
         boxShadow: boxShadow,
         gradient: gradient,
         backgroundBlendMode: backgroundBlendMode,
-        shape: shape,
-        position: position);
+        shape: shape);
+    return modifier(DecoratedBoxModifier(
+        key: key, decoration: decoration, position: position));
   }
 }
