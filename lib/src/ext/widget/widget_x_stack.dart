@@ -1,20 +1,18 @@
 part of '../../../flatter.dart';
 
 extension OverlayExt on Widget {
-  /// Wrap the widget in Stack widget. This adds the current widget
-  /// below the provided widget in z axis.
-  /// It's just an alias to stack API.
-  Stack overlay(
+  /// Wrap the widget in Stack widget.
+  Stack stack(
       {AlignmentGeometry alignment = AlignmentDirectional.topStart,
       TextDirection? textDirection,
       StackFit fit = StackFit.loose,
       Clip clipBehavior = Clip.hardEdge,
       required Widget of}) {
-    return stack(
+    return modifier(StackModifier(
         alignment: alignment,
         textDirection: textDirection,
         fit: fit,
         clipBehavior: clipBehavior,
-        of: of);
+        other: of));
   }
 }

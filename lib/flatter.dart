@@ -1,7 +1,7 @@
 library flatter;
 
-import 'dart:ui' as ui show WindowPadding;
 import 'dart:ui';
+import 'dart:ui' as ui show WindowPadding;
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -39,6 +39,8 @@ part 'src/ext/widget/widget_x_overlay.dart';
 part 'src/ext/widget/widget_x_padding.dart';
 
 part 'src/ext/widget/widget_x_shadow.dart';
+
+part 'src/ext/widget/widget_x_stack.dart';
 
 part 'src/ext/widget/widget_x_tooltip.dart';
 
