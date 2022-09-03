@@ -10,7 +10,7 @@ part 'src/ext/text/text_x_style.dart';
 
 part 'src/ext/text/text_style_x_predefined.dart';
 
-part 'src/ext/widget/flat_card.dart';
+part 'src/ext/widget/widget_x_card.dart';
 
 part 'src/ext/widget/widget_x_align.dart';
 
