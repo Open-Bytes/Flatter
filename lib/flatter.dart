@@ -6,39 +6,39 @@ import 'dart:ui';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
-part 'src/ext/text/text+style.dart';
+part 'src/ext/text/text_x_style.dart';
 
-part 'src/ext/text/text_style+predefined.dart';
+part 'src/ext/text/text_style_x_predefined.dart';
 
 part 'src/ext/widget/flat_card.dart';
 
-part 'src/ext/widget/widget+align.dart';
+part 'src/ext/widget/widget_x_align.dart';
 
-part 'src/ext/widget/widget+background.dart';
+part 'src/ext/widget/widget_x_background.dart';
 
-part 'src/ext/widget/widget+center.dart';
+part 'src/ext/widget/widget_x_center.dart';
 
-part 'src/ext/widget/widget+container.dart';
+part 'src/ext/widget/widget_x_container.dart';
 
-part 'src/ext/widget/widget+corner_radius.dart';
+part 'src/ext/widget/widget_x_corner_radius.dart';
 
-part 'src/ext/widget/widget+expanded.dart';
+part 'src/ext/widget/widget_x_expanded.dart';
 
-part 'src/ext/widget/widget+gesture_detector.dart';
+part 'src/ext/widget/widget_x_gesture_detector.dart';
 
-part 'src/ext/widget/widget+icon_button.dart';
+part 'src/ext/widget/widget_x_icon_button.dart';
 
-part 'src/ext/widget/widget+ink_well.dart';
+part 'src/ext/widget/widget_x_ink_well.dart';
 
-part 'src/ext/widget/widget+material.dart';
+part 'src/ext/widget/widget_x_material.dart';
 
-part 'src/ext/widget/widget+overlay.dart';
+part 'src/ext/widget/widget_x_overlay.dart';
 
-part 'src/ext/widget/widget+padding.dart';
+part 'src/ext/widget/widget_x_padding.dart';
 
-part 'src/ext/widget/widget+shadow.dart';
+part 'src/ext/widget/widget_x_shadow.dart';
 
-part 'src/ext/widget/widget+tooltip.dart';
+part 'src/ext/widget/widget_x_tooltip.dart';
 
 part 'src/layout/flat_center.dart';
 
