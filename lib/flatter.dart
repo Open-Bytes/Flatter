@@ -82,6 +82,8 @@ part 'src/modifier/overlay_modifier.dart';
 
 part 'src/modifier/padding_modifier.dart';
 
+part 'src/modifier/theme_modifier.dart';
+
 part 'src/modifier/tooltip_modifier.dart';
 
 part 'src/modifier/widget_modifier.dart';
