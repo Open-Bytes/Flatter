@@ -1,7 +1,7 @@
 part of '../../../flatter.dart';
 
 extension ThemeExt on Widget {
-  /// Wrap the widget in Align widget.
+  /// Wrap the widget in Theme widget.
   Theme theme({
     Key? key,
     required ThemeData data,
