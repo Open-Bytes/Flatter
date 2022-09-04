@@ -42,6 +42,8 @@ part 'src/ext/widget/widget_x_shadow.dart';
 
 part 'src/ext/widget/widget_x_stack.dart';
 
+part 'src/ext/widget/widget_x_theme.dart';
+
 part 'src/ext/widget/widget_x_tooltip.dart';
 
 part 'src/layout/flat_center.dart';
