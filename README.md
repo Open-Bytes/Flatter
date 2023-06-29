@@ -2,6 +2,8 @@
 
 We make Flutter **flat**, We are **Flatter** 👋
 
+pub.dev [Flatter](https://pub.dev/packages/flatter)
+
 <p align="center"><a href=""><img src="https://github.com/Open-Bytes/Flatter/blob/master/etc/images/logo.jpeg?raw=true" alt="Gray shape shifter" width="350" height="300"/></a></p>
 
 The logo is contributed with ❤️ by [Mahmoud Hussein](https://github.com/MhmoudAlim)
